@@ -52,6 +52,14 @@
     <!-- 주석 -->
 
     <!-- 시멘틱웹: SEO 검색엔진 최적화, 의도를 명확히 지정하다-->
+    <!-- 구조 -->
+    <header><nav>header>nav</nav></header>
+    <aside>aside</aside>
+    <section>
+      <article>section>article</article>
+    </section>
+    <footer>footer</footer>
+
     <!-- 텍스트 -->
     <font size="6"><b>heading 1</b></font>
     <h1>heading 1</h1>
@@ -93,12 +101,13 @@
         console.log(myArray[0]);     // undefined
     </pre>
 
-    <!-- 시멘틱웹-구조 -->
-    <header><nav>header>nav</nav></header>
-    <aside>aside</aside>
-    <section>
-      <article>section>article</article>
-    </section>
-    <footer>footer</footer>
+    <!-- 링크 -->
+    <a href="http://www.google.com" target="_self">URL</a><br />
+    <a href="http://www.google.com" target="_blank">URL</a><br />
+    <a href="html/my.html">Local file</a><br />
+    <a href="file/my.pdf" download>Download file</a><br />
+    <a href="#">fragment identifier</a><br />
+    <a href="mailto:someone@example.com?Subject=Hello again">Send Mail</a><br />
+    <a href="javascript:alert('Hello');">Javascript</a>
   </body>
 </html>
