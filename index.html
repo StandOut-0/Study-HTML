@@ -157,14 +157,14 @@
     </table>
 
     <!-- 이미지 -->
-    <img src="sample.jpg" alt="이미지설명" width="100" height="100" />
+    <img src="sample.jpg" alt="이미지설명" width="100" height="100" /><br />
 
     <!-- 오디오 -->
-    <audio src="sample.mp3" controls></audio>
+    <audio src="sample.mp3" controls></audio><br />
     <audio controls preload autoplay loop>
       <source src="sample.mp3" type="audio/mpeg" />
-      Your browser does not support the audio element.
-    </audio>
+      Your browser does not support the audio element.</audio
+    ><br />
 
     <!-- 비디오 -->
     <video
@@ -179,5 +179,104 @@
       <source src="sample.mp4" type="video/mp4" />
       <source src="sample.webm" type="video/webm" />
     </video>
+
+    <!-- 폼 -->
+    <form action="http://sample.com" method="get">
+      <input type="text" type="hidden" /><br />
+      <input type="search" name="googlesearch" /><br />
+
+      <input
+        type="text"
+        id="username"
+        name="username"
+        autocomplete="on"
+      /><br />
+      <input type="text" value="읽기 전용" disabled readonly /><br />
+      <input type="password" name="pwd" /><br />
+
+      <fieldset>
+        <legend>Login</legend>
+        <label for="email">이메일:</label>
+        <input type="email" id="email" name="email" required /><br />
+        비밀번호:
+        <input
+          type="text"
+          name="password"
+          placeholder="email을 입력하세요"
+          required
+        />
+      </fieldset>
+
+      <label for="email">이메일:</label>
+      <input type="email" id="email" name="email" required /><br />
+
+      <input type="checkbox" name="checkbox" value="checkbox1" checked />
+      checkbox1
+      <input type="checkbox" name="checkbox" value="checkbox2" />
+      checkbox2<br />
+      <input type="radio" name="radio" value="radio1" checked />
+      radio1
+      <input type="radio" name="radio" value="radio2" /> radio2<br />
+
+      <input
+        type="number"
+        name="quantity"
+        min="2"
+        max="10"
+        step="2"
+        value="2"
+      /><br />
+      <input type="tel" name="mytel" /><br />
+
+      <input type="date" name="birthday" /><br />
+      <input type="datetime" name="birthdaytime" /><br />
+      <input type="datetime-local" name="birthdaytime" /><br />
+      <input type="month" name="birthdaymonth" /><br />
+      <input type="week" name="week_year" /><br />
+      <input type="time" name="mytime" /><br />
+
+      <input
+        type="range"
+        name="points"
+        min="0"
+        max="10"
+        step="1"
+        value="5"
+      /><br />
+
+      <input type="url" name="myurl" /><br />
+      <input type="file" name="myfile" /><br />
+      <input type="file" id="files" name="files" multiple /><br />
+
+      <input type="reset" />
+      <input type="submit" value="Submit" /><br />
+
+      <input
+        type="button"
+        value="Click me"
+        onclick="alert('Hello world!')"
+      /><br />
+      <button type="button" onclick="alert('Hello World!')">Click Me!</button
+      ><br />
+
+      <textarea name="message" rows="10" cols="30">
+Write something here</textarea
+      ><br />
+
+      <select name="select">
+        <option value="1" selected>Vo1lvo</option>
+        <option value="2" disabled>2</option>
+        <option value="3">3</option>
+      </select>
+      <select name="select" multiple>
+        <option value="1" selected>Vo1lvo</option>
+        <option value="2" disabled>2</option>
+        <option value="3">3</option>
+        <optgroup label="optgroup">
+          <option value="4-1">4-1</option>
+          <option value="4-2">4-2</option>
+        </optgroup>
+      </select>
+    </form>
   </body>
 </html>
